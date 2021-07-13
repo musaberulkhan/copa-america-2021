@@ -3,7 +3,7 @@
 ********************************************************************/
 body{
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;    
 }
 
 h1{
@@ -25,6 +25,12 @@ h1{
 
 .container{
     width: 1163px;    
+}
+
+.half-width-flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /********************************************************************
@@ -76,11 +82,11 @@ nav{
     padding-bottom: 86px;
 }
 
-.header-banner .container{
+/* .header-banner .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .header-banner-left{
     margin-right: 51px;
@@ -101,4 +107,40 @@ nav{
 
 .header-banner-right img{
     width: 556px;   
+}
+
+
+
+
+
+
+/********************************************************************
+                        Header Styles
+********************************************************************/
+.top-players{
+    margin-top: 70px;
+    margin-bottom: 165px;
+    display: flex;
+    justify-content: center;
+}
+
+.top-players .container{
+    
+}
+
+.players{
+    margin: 0 30px;   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.player{
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player img{
+    width: 100%;
 }
