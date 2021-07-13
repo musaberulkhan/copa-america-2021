@@ -1,0 +1,104 @@
+/********************************************************************
+                        Common Styles
+********************************************************************/
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 64px;
+}
+
+.custom-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover{   
+    background-color: #9e013b;    
+}
+
+.container{
+    width: 1163px;    
+}
+
+/********************************************************************
+                        Header Styles
+********************************************************************/
+header{    
+    background-color:#2D25A0;    
+}
+
+/**************            Navigation           ********************/
+.navigation,
+.header-banner{    
+    display: flex;
+    justify-content: center;
+}
+
+nav{    
+    padding-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-items ul li a{
+    text-decoration: none;
+    margin-right: 36px;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.nav-items ul li:hover a{
+    color: #E02C6D;
+}
+
+.nav-login .custom-button i{
+    margin-right: 8px;
+}
+
+
+/**************            Header Banner           ********************/
+.header-banner{
+    padding-top: 54px;
+    padding-bottom: 86px;
+}
+
+.header-banner .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-banner-left{
+    margin-right: 51px;
+}
+
+.header-banner-left h1{
+    color: #FFFFFF;
+    margin: 0 0 27px 0;
+}
+
+.header-banner-left .custom-button i{
+    margin-left: 8px;
+}
+
+.header-banner-right{
+    margin-left: 51px;
+}
+
+.header-banner-right img{
+    width: 556px;   
+}
