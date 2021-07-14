@@ -3,11 +3,20 @@
 ********************************************************************/
 body{
     margin: 0;
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;  
+    background-color: #FFFFFF;  
 }
 
 h1{
     font-size: 64px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 28px;
 }
 
 .custom-button{
@@ -29,6 +38,7 @@ h1{
 
 .half-width-flexbox{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -115,7 +125,7 @@ nav{
 
 
 /********************************************************************
-                        Header Styles
+                        Players Styles
 ********************************************************************/
 .top-players{
     margin-top: 70px;
@@ -124,18 +134,15 @@ nav{
     justify-content: center;
 }
 
-.top-players .container{
-    
-}
-
 .players{
-    margin: 0 30px;   
+    margin: 0 20px;   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
 
 .player{
+    max-width: 330px;
     padding: 15px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -143,4 +150,65 @@ nav{
 
 .player img{
     width: 100%;
+}
+
+
+.player h3{
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #18191F;
+    font-weight: 700;
+}
+
+
+.player p{
+    margin-top: 10px;
+    margin-bottom: 18px;
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+
+/********************************************************************
+                        Highlights Styles
+********************************************************************/
+.highlights-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 158px;
+}
+
+.highlights{
+    margin: 0 25px;
+}
+
+.highlights .highlights-left{
+    margin-top: 0;
+    margin-right: 33px;
+}
+
+.highlights .highlights-left h2{
+    margin: 0;
+    font-weight: 700;
+}
+
+.highlights .highlights-left p{
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.highlights .highlights-left a i{
+    margin-left: 8px;
+}
+
+.highlights .highlights-right{
+    margin-left: 33px;
+}
+
+.highlights .highlights-right img{
+    width: 567px;   
 }
