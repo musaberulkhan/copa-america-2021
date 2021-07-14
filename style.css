@@ -92,12 +92,6 @@ nav{
     padding-bottom: 86px;
 }
 
-/* .header-banner .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
 .header-banner-left{
     margin-right: 51px;
 }
@@ -285,6 +279,67 @@ nav{
     color: #727272;
 }
 
+
+
+/********************************************************************
+                        Buy Tshirt Styles
+********************************************************************/
+.tshirt-section{
+    background-color: #2e206d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.tshirt-section .tshirt-text{
+    padding-right: 30px;
+}
+
+.tshirt-section .tshirt-text h2{
+    color: #ebebeb;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.tshirt-section .tshirt-text p{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.tshirt-section .tshirt-text p a{
+    text-decoration: none;
+    color: #ff703c;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tshirt-section .tshirt-text p a:hover{
+    color: sandybrown;
+}
+
+.tshirt-section .tshirt-text h3{
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.tshirt-section .tshirt-text h2 sup{
+    font-size: 0.5em;
+    color: red;
+    margin-right: 10px;    
+}
+
+.tshirt-section .tshirt-text .price{
+    margin-bottom: 30px;
+}
+
+.tshirt-section .tshirt-image img{
+    width: 550px;
+    padding: 50px 30px;
+}
+
 /********************************************************************
                         Footer Styles
 ********************************************************************/
@@ -331,3 +386,9 @@ footer .copyright{
     color: #000000;
     font-size: 18px;
 }
+
+
+
+/********************************************************************
+                        Footer Styles
+********************************************************************/
