@@ -221,6 +221,71 @@ nav{
 
 
 /********************************************************************
+                        Result Styles
+********************************************************************/
+.result-section{    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;    
+}
+
+.result-section .section-title{
+    display: flex;
+    justify-content: center;   
+}
+
+.result-section .section-title h1{
+    text-align: center;
+    color: #2D25A0;
+    border-bottom: 5px solid #b9b9b9;   
+    margin-top: 0; 
+    margin-bottom: 10px;
+}
+
+.result{
+    margin-top: 50px;    
+}
+
+.result h2,
+.result p{
+    margin: 0;
+}
+
+.result h2{
+    font-weight: 700;
+    color: #E02C6D;
+}
+
+.result p{
+    margin-bottom: 20px;
+}
+
+.result-box{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgb(44 62 80 / 50%);
+    border-radius: 12px;
+    padding: 20px 10px;
+}
+
+.result-box div{
+    display: flex;    
+    align-items: center;
+    padding: 15px 20px;  
+}
+
+.result-box img{
+    width: 90px;
+    height: 70px;
+    margin: 0 25px;   
+}
+
+.result-box h1{
+    margin: 0;
+    color: #727272;
+}
+
+/********************************************************************
                         Footer Styles
 ********************************************************************/
 footer{
