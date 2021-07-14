@@ -416,6 +416,7 @@ footer .copyright{
 /* **********     For Small Laptop and Small Desktop     ***********/
 @media only screen and (min-width:769px) and (max-width:1024px){
     
+    /* -------       Common/Shared Styles          ------- */
     h1{
         font-size: 45px;
     }
@@ -432,6 +433,7 @@ footer .copyright{
         width: 760px;    
     }
 
+    /* -------         Header Styles          ------- */
     .nav-items ul li a{       
         margin-right: 20px;      
     }    
@@ -440,15 +442,21 @@ footer .copyright{
         width: 380px;
     }
 
+
+    /* -------       Players Styles          ------- */
     .players{     
         grid-template-columns: repeat(3, 1fr);     
         margin:0;  
     }
 
+
+    /* -------       Highlights Styles          ------- */
     .highlights .highlights-right img{
         width: 350px;   
     } 
     
+
+    /* -------       T-shirt Styles          ------- */
     .tshirt-section .tshirt-image img{
         width: 350px;
         padding: 20px 20px;
@@ -460,7 +468,7 @@ footer .copyright{
 
 /* **********     For iPad and Tablet   ***********/
 @media only screen and (min-width:481px) and (max-width:768px){   
-   
+   /* -------       Common/Shared Styles          ------- */
     h1{
         font-size: 36px;
     }
@@ -484,6 +492,14 @@ footer .copyright{
         padding-right: 20px;  
     }
 
+    .half-width-flexbox{
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+    }
+
+
+    /* -------         Header Styles          ------- */
     .mobile-menu{
         display: block;
         color: #FFFFFF;
@@ -493,7 +509,6 @@ footer .copyright{
     .nav-items ul{
         display: none;        
     }
-  
 
     .header-banner-left{
         margin-right: 0;
@@ -508,11 +523,12 @@ footer .copyright{
         margin-top: 50px;
     }
 
+
+    /* -------       Players Styles          ------- */
     .players{ 
         grid-gap: 10px;    
         grid-template-columns: repeat(2, 1fr);      
     }
-
     
     .player p{
         margin-top: 5px;
@@ -521,6 +537,8 @@ footer .copyright{
         line-height: 22px;
     }
 
+
+    /* -------       Highlights Styles          ------- */
     .highlights .highlights-left{       
         margin-right: 0;
     }
@@ -528,17 +546,19 @@ footer .copyright{
     .highlights .highlights-right{
         margin-left: 0;
     }
-    
-    .tshirt-section .tshirt-text{
-        padding-right: 0;
-    }
 
     .highlights .highlights-right img{
         width: 100%;
         margin-top: 50px;
         margin-left: 0;
         padding-left: 0;   
-    }   
+    }      
+
+
+    /* -------       T-shirt Styles          ------- */
+    .tshirt-section .tshirt-text{
+        padding-right: 0;
+    }    
     
     .tshirt-section .tshirt-image img{
         width: 100%;
@@ -546,13 +566,8 @@ footer .copyright{
         margin-top: 70px;
     }
 
-    .half-width-flexbox{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
     
+    /* -------       Footer Styles          ------- */
     footer .container img{    
         width: 300px;
     }    
@@ -561,9 +576,10 @@ footer .copyright{
 
 
 
+
 /* **********     Smart Phone   ***********/
 @media only screen and (max-width: 480px){   
-   
+   /* -------       Common/Shared Styles          ------- */
     h1{
         font-size: 36px;
     }
@@ -587,6 +603,14 @@ footer .copyright{
         padding-right: 10px;  
     }
 
+    .half-width-flexbox{
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+    }   
+
+
+    /* -------         Header Styles          ------- */
     .mobile-menu{
         display: block;
         color: #FFFFFF;
@@ -595,8 +619,7 @@ footer .copyright{
     
     .nav-items ul{
         display: none;        
-    }
-  
+    }  
 
     .header-banner-left{
         margin-right: 0;
@@ -611,24 +634,34 @@ footer .copyright{
         margin-top: 50px;
     }
 
+
+
+    /* -------       Players Styles          ------- */
     .top-players{
         margin-top: 50px;
         margin-bottom: 60px;           
     }
 
-    .players{ 
-        grid-gap: 10px;    
-        grid-template-columns: repeat(1, 1fr);      
+    .top-players.horizontal-padding{
+        padding-left: 3px;
+        padding-right: 3px;  
     }
 
+    .players{ 
+        grid-gap: 24px;    
+        grid-template-columns: repeat(1, 1fr);      
+    }
     
     .player p{
         margin-top: 5px;
         margin-bottom: 5px;       
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 28px;
     }
 
+
+
+    /* -------       Highlights Styles          ------- */
     .highlights-section{
         margin-bottom: 50px;        
     }
@@ -640,7 +673,9 @@ footer .copyright{
     .highlights .highlights-right{
         margin-left: 0;
     }   
-    
+
+
+    /* -------       Results Styles          ------- */
     .result-section{
         margin-top: 50px;            
         margin-bottom: 30px;    
@@ -665,6 +700,8 @@ footer .copyright{
         margin: 0 5px;   
     }
 
+
+    /* -------       T-shirt Styles          ------- */
     .tshirt-section{
         margin-top: 50px;
         margin-bottom: 50px;
@@ -685,15 +722,10 @@ footer .copyright{
         width: 100%;
         padding: 0px;
         margin-top: 70px;
-    }
+    } 
 
-    .half-width-flexbox{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }    
 
+    /* -------         Footer Styles          ------- */
     footer{           
         padding-bottom: 100px;
     }
