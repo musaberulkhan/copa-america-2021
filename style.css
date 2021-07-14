@@ -43,11 +43,16 @@ h3{
     align-items: center;
 }
 
+.horizontal-padding{
+    padding-left: 30px;
+    padding-right: 30px;  
+}
+
 /********************************************************************
                         Header Styles
 ********************************************************************/
 header{    
-    background-color:#2D25A0;    
+    background-color:#2D25A0;      
 }
 
 /**************            Navigation           ********************/
@@ -62,6 +67,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.mobile-menu{
+    display: none;
 }
 
 .nav-items ul{
@@ -123,13 +132,13 @@ nav{
 ********************************************************************/
 .top-players{
     margin-top: 70px;
-    margin-bottom: 165px;
+    margin-bottom: 165px;    
     display: flex;
     justify-content: center;
 }
 
 .players{
-    margin: 0 20px;   
+    margin: 0 10px;   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
@@ -140,6 +149,12 @@ nav{
     padding: 15px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in;
+}
+
+.player:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 .player img{
@@ -289,6 +304,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-top: 150px;
     margin-bottom: 150px;
 }
@@ -347,6 +364,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 footer .container{
@@ -376,7 +394,7 @@ footer .social-icon .icon-background{
 }
 
 footer .social-icon i{   
-    font-size: 20px;
+    font-size: 16px;
     color: #969BAB;
     opacity: 1!important;
     
@@ -390,5 +408,299 @@ footer .copyright{
 
 
 /********************************************************************
-                        Footer Styles
+                        Responsive Media Query
 ********************************************************************/
+
+
+
+/* **********     For Small Laptop and Small Desktop     ***********/
+@media only screen and (min-width:769px) and (max-width:1024px){
+    
+    h1{
+        font-size: 45px;
+    }
+    
+    h2{
+        font-size: 35px;
+    }
+    
+    h3{
+        font-size: 22px;
+    }
+
+    .container{
+        width: 760px;    
+    }
+
+    .nav-items ul li a{       
+        margin-right: 20px;      
+    }    
+
+    .header-banner-right img{
+        width: 380px;
+    }
+
+    .players{     
+        grid-template-columns: repeat(3, 1fr);     
+        margin:0;  
+    }
+
+    .highlights .highlights-right img{
+        width: 350px;   
+    } 
+    
+    .tshirt-section .tshirt-image img{
+        width: 350px;
+        padding: 20px 20px;
+    }
+}
+
+
+
+
+/* **********     For iPad and Tablet   ***********/
+@media only screen and (min-width:481px) and (max-width:768px){   
+   
+    h1{
+        font-size: 30px;
+    }
+    
+    h2{
+        font-size: 24px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+
+    .container{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;    
+    }
+
+    .horizontal-padding{
+        padding-left: 20px;
+        padding-right: 20px;  
+    }
+
+    .mobile-menu{
+        display: block;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    
+    .nav-items ul{
+        display: none;        
+    }
+  
+
+    .header-banner-left{
+        margin-right: 0;
+    }      
+    
+    .header-banner-right{
+        margin-left: 0;
+    }
+
+    .header-banner-right img{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .players{ 
+        grid-gap: 10px;    
+        grid-template-columns: repeat(2, 1fr);      
+    }
+
+    
+    .player p{
+        margin-top: 5px;
+        margin-bottom: 5px;       
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .highlights .highlights-left{       
+        margin-right: 0;
+    }
+
+    .highlights .highlights-right{
+        margin-left: 0;
+    }
+    
+    .tshirt-section .tshirt-text{
+        padding-right: 0;
+    }
+
+    .highlights .highlights-right img{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        padding-left: 0;   
+    }   
+    
+    .tshirt-section .tshirt-image img{
+        width: 100%;
+        padding: 0px;
+        margin-top: 70px;
+    }
+
+    .half-width-flexbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer .container img{    
+        width: 300px;
+    }    
+}
+
+
+
+
+/* **********     Smart Phone   ***********/
+@media only screen and (max-width: 480px){   
+   body{
+       background-color: aqua;
+   }
+    h1{
+        font-size: 25px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+    
+    h3{
+        font-size: 18px;
+    }
+
+    .container{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;    
+    }
+
+    .horizontal-padding{
+        padding-left: 10px;
+        padding-right: 10px;  
+    }
+
+    .mobile-menu{
+        display: block;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    
+    .nav-items ul{
+        display: none;        
+    }
+  
+
+    .header-banner-left{
+        margin-right: 0;
+    }      
+    
+    .header-banner-right{
+        margin-left: 0;
+    }
+
+    .header-banner-right img{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .top-players{
+        margin-top: 50px;
+        margin-bottom: 60px;           
+    }
+
+    .players{ 
+        grid-gap: 10px;    
+        grid-template-columns: repeat(1, 1fr);      
+    }
+
+    
+    .player p{
+        margin-top: 5px;
+        margin-bottom: 5px;       
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .highlights-section{
+        margin-bottom: 50px;        
+    }
+
+    .highlights .highlights-left{       
+        margin-right: 0;
+    }
+
+    .highlights .highlights-right{
+        margin-left: 0;
+    }   
+    
+    .result-section{
+        margin-top: 50px;            
+        margin-bottom: 30px;    
+    }    
+    
+    .result-section .section-title{
+       margin-bottom: 0;
+       
+    }
+
+    .result-section .result{
+        margin-top: 25px;
+    }
+    
+    .result-box div{       
+        padding: 15px 10px;  
+    }
+    
+    .result-box img{
+        width: 70px;
+        height: 50px;
+        margin: 0 5px;   
+    }
+
+    .tshirt-section{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .tshirt-section .tshirt-text{
+        padding-right: 0;
+    }
+
+    .highlights .highlights-right img{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        padding-left: 0;   
+    }   
+    
+    .tshirt-section .tshirt-image img{
+        width: 100%;
+        padding: 0px;
+        margin-top: 70px;
+    }
+
+    .half-width-flexbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }    
+
+    footer{           
+        padding-bottom: 100px;
+    }
+
+    footer .container img{    
+        width: 200px;
+    }    
+}
