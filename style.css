@@ -447,6 +447,7 @@ footer .copyright{
     .players{     
         grid-template-columns: repeat(3, 1fr);     
         margin:0;  
+        grid-gap: 15px;
     }
 
 
@@ -529,7 +530,12 @@ footer .copyright{
         grid-gap: 10px;    
         grid-template-columns: repeat(2, 1fr);      
     }
-    
+
+    .top-players.horizontal-padding{
+        padding-left: 3px;
+        padding-right: 3px;  
+    }
+        
     .player p{
         margin-top: 5px;
         margin-bottom: 5px;       
